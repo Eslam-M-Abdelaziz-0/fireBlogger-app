@@ -1,0 +1,71 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="danger">
+    <span><ion-title>
+      <i class="fa fa-user-plus" aria-hidden="false" ></i>
+      Sign Up
+    </ion-title></span>
+	<ion-buttons (click)="close()" end>
+		<button ion-button><ion-icon name="md-close"></ion-icon></button>
+	</ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list>
+		<ion-item>
+			<ion-label floating>User Name</ion-label>
+			<ion-input type="text" [(ngModel)]="name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating>Country</ion-label>
+			<ion-input type="email" [(ngModel)]="country"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating>Gavernement</ion-label>
+			<ion-input type="email" [(ngModel)]="gaver"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating>City</ion-label>
+			<ion-input type="email" [(ngModel)]="city"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating>brith day</ion-label>
+			<ion-input type="email" [(ngModel)]="birth"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating>Phone</ion-label>
+			<ion-input type="text" [(ngModel)]="phone"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating>Email</ion-label>
+			<ion-input type="email" [(ngModel)]="email"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating>Password</ion-label>
+			<ion-input type="password" [(ngModel)]="pass"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-title>
+			<button ion-button larg color="danger" (click)="signup()"><i class="fa fa-user-plus" aria-hidden="true" ></i>
+			Sign Up
+			</button>
+			<button ion-button larg color="danger" (click)="goToLogin()"><ion-icon name="log-in"></ion-icon>
+			Go TO Login
+			</button>
+			</ion-title>
+			
+		</ion-item>
+
+	</ion-list>
+
+
+</ion-content>
